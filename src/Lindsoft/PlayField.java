@@ -63,9 +63,8 @@ public class PlayField {
     }
 
     public static void placeMarker(int xPosition, int yPosition, String marker) {
-        // since frames on the side is the first and last in the yPosition, the first coordinates where the player can place a marker
-        // starts with 1. Therefore i also chose to exclude the first line in the xPosition so that all coordinates starts
-        // with 1. [1][1] position is in the upper left corner.
+        // places marker on coordinates location. See the xPosition and yPosition as coordinates. X = width, Y=depth,
+        // coordinates starts at 0,0
 
         if (playFieldXY[xPosition][yPosition] == " ") {
             playFieldXY[xPosition][yPosition] = marker;
